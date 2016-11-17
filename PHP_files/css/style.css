@@ -1,0 +1,167 @@
+/* How to call CSS file in HTML:
+	<head>
+		<link rel="stylesheet" type="text/css" href="cssFileName.css">
+	</head>
+*/
+
+/* blackground color  */
+body{
+    /*background-color: rgb(241, 239, 241);*/
+	background: #F5F5F5 url(../images/p5.jpg);
+	margin: 0;
+}
+
+
+/* h2 header format  */
+h1  {
+    color: black;
+    margin-left: 10px;
+	text-align: center;
+	font-size: 40px
+}
+
+
+/* header 2  format  */
+h2 {
+	color: black;
+	margin-left: 10px;
+	font-size: 20px
+}
+
+
+/* links format  */	
+/* how to call in HTML: <a href="link.php">name</a> */ 
+a.singlelink:link {
+    color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+a.singlelink:visited {
+    color: rgb(148, 31, 146);
+	text-decoration: none;
+	font-weight: bold;
+}
+a.singlelink:hover {
+    color: black;
+	text-decoration: underline;
+	font-weight: bold;
+}
+a.singlelink:active {
+    color: black;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+/* links format 2 */	
+/* how to call in HTML: <a href="link.php">name</a> */ 
+a.singlelink2:link, a.singlelink2:visited {
+    background-color: rgb(167, 103, 144);
+    color: white;
+	font-weight: bold;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a.singlelink2:hover, a.singlelink2:active {
+    background-color: rgb(137, 62, 124);
+}
+
+
+
+/* Full-height Fixed Vertical Navbar */
+/* how to call in HTML: <ul><li><a class = "active herf ="#link.php"> name</a></li><ul>> */ 
+/*
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+*/
+
+/*Fixed top Navigation*/
+/* how to call in HTML: <ul><li><a class = "active herf ="#link.php"> name</a></li><ul>> */ 
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(226, 232, 228);
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+li {
+    float: left;
+}
+li a{
+    display: block;
+    color: black;
+	font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover:not(.active) {
+    background-color: rgb(167, 142, 144); /* Color: Dark gray: rgb(167, 142, 144)*/
+	color: white;
+}
+.active {
+    background-color: rgb(85, 100, 146); /* Color: purple: rgb(167, 142, 144)*/
+	color: white;
+}
+
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(85, 100, 146); /* Coloe: purple: rgb(85, 100, 146)*/
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: rgb(85, 79, 146); /* Coloe: dark purple : rgb(85, 79, 146)*/
+}
+
+/*Div style*/
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2; 
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 5%;
+	margin-bottom: 10%;
+    padding: 20px;
+}
+

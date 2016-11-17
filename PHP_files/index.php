@@ -1,34 +1,38 @@
 <!-- The index -->
 
+<head>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
 
 <html>
-
-	<head><title>  </title></head>
 	
 	<body>
 	
-		<br><br><br> *** Welcome! *** <br><br><br>
+		<ul>
+			<li><a class="active"  href="index.php"> Index </a></li>
+			<li><a  href="faculty.php"> Faculty </a></li>
+			<li><a href="employee.php"> Employee </a></li>
+		</ul> 
 	
-		<form action="student.php">
-			<fieldset><legend> Please Log In </legend>
-				<br>Username:
-				<input type="text" name="UserName" size="50"><br>
-				<br> Password:
-				<input type="text" name="Password" size="50"><br><br>
-			
-				<input type="submit" value="Log In">
-
-				<br><br><a href="guest.php">Continue as a guest</a><br><br>
-				
-			</fieldset>
-		</form> 
 		
-		<!-- Need to be discussed -->
-		<br><br><a href="faculty.php"> faculty</a>
-		<br><a href="employee.php">employee</a><br><br>
-
-
+			<h1>*** Welcome! ***</h1>
+			<div>
+				<form action="student.php">
+					<fieldset><legend><h2> Please Log In </h2></legend>
+					<br></br>
+						<label for = "uname"><b> Username </b></label>
+							<input type="text" id= "uname" name="username">
+						<label for = "pass"><b> Password </b></label>
+							<input type="text" id= "pass" name="password">
+						<input type="submit" value="Log In">
+					</fieldset>
+				</form> 
+				
+				<a class="singlelink" href="guest.php">Continue as a guest</a>
+			</div>
+		
 	</body>
+	
 
 </html>
 
