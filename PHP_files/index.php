@@ -5,18 +5,18 @@
 </head>
 
 <html>
-	
+<div class = "pagediv">
+
 	<body>
-	
 		<ul>
 			<li><a class="active"  href="index.php"> Index </a></li>
 			<li><a  href="faculty.php"> Faculty </a></li>
 			<li><a href="employee.php"> Employee </a></li>
 		</ul> 
 	
-		
-			<h1>*** Welcome! ***</h1>
-			<div>
+			<br></br>
+			<h1>Welcome to SJU Scheduling System</h1>
+			<div class= "formdiv">
 				<form action="student.php">
 					<fieldset><legend><h2> Please Log In </h2></legend>
 					<br></br>
@@ -28,12 +28,17 @@
 					</fieldset>
 				</form> 
 				
-				<a class="singlelink" href="guest.php">Continue as a guest</a>
+				<a class="singlelink" href="guest.php"><b>Continue as a guest</b></a>
 			</div>
-		
 	</body>
 	
-
+	<footer>
+		<small>
+			<b>© Copyright 2016 - This application is a project for Database Management course, SJU</b>
+		</small>
+	</footer>
+	
+</div>
 </html>
 
 
